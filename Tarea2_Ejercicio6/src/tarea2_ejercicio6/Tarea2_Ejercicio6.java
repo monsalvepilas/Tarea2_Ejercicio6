@@ -1,20 +1,18 @@
 
-
 package tarea2_ejercicio6;
 
 import java.util.Scanner;
 
 public class Tarea2_Ejercicio6 {
 
-    public static void main(String[] args) {
-        
-                
-      	Scanner EntradaDatosRectanculo = new Scanner(System.in);
+	public static void main(String[] args) {
+
+		Scanner EntradaDatosRectanculo = new Scanner(System.in);
 
 		int alto = 0;
 		int ancho = 0;
-                int dibujar=0;
-                int contador=0;
+		int dibujar = 0;
+		int contador = 0;
 
 		System.out.println("Solo puedes valores entre 1 y 20 ");
 
@@ -52,96 +50,64 @@ public class Tarea2_Ejercicio6 {
 
 		}
 
+		for (contador = 1; contador < ancho + 1; contador++) {
 
-                
-                
-                
-                for (contador = 1; contador < ancho+1; contador++) {
-                    
-                     
-                    if ((contador==1)||(contador==ancho)){
-                        
-                        System.out.print("+");
-                         
-                     }else {
-                        
-                        System.out.print("-");
-                    }
-            
-        }
-                 System.out.println("");
-                 
-                
-                 for (int contador1 = 1; contador1 < alto-1; contador1++) {
-                     
-                      
-                     
-                     
-                     
-                     System.out.print("|");
-                      
-                     
-                        
-                        
-                    
-                    
-                        
-                        
-                     
-                      
-                      
-                      
-                      for (int contador2 = 1; contador2 < ancho-1; contador2++) {
-                          
-                        
-                          
-                          if ((contador2==1)||(contador2==ancho-2)){
-                        
-                        System.out.print("*");
-                        
-                          }else if ((contador1==1)||(contador1==alto-2)){
-                                
-                             
-                              System.out.print("*");
-                     }else {
-                            System.out.print(" ");
-                            
-                            }
-     
-                          
-                      }
-                      
-                      System.out.print("|");
-                      
-                       System.out.println("");
-                      
-                 }
-                 
-                 
-                 
-            
-        for (contador = 1; contador < ancho+1; contador++) {
-                    
-                     
-                    if ((contador==1)||(contador==ancho)){
-                        
-                        System.out.print("+");
-                         
-                     }else {
-                        
-                        System.out.print("-");
-                    }
-            
-        }
-        
-        System.out.println("");
-                
-                
+			if ((contador == 1) || (contador == ancho)) {
+
+				System.out.print("+");
+
+			} else {
+
+				System.out.print("-");
+			}
+
+		}
+		System.out.println("");
+
+		for (int contador1 = 1; contador1 < alto - 1; contador1++) {
+
+			System.out.print("|");
+
+			for (int contador2 = 1; contador2 < ancho - 1; contador2++) {
+
+				if ((contador2 == 1) || (contador2 == ancho - 2)) {
+
+					System.out.print("*");
+
+				} else if ((contador1 == 1) || (contador1 == alto - 2)) {
+
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+
+				}
+
+			}
+
+			System.out.print("|");
+
+			System.out.println("");
+
+		}
+
+		for (contador = 1; contador < ancho + 1; contador++) {
+
+			if ((contador == 1) || (contador == ancho)) {
+
+				System.out.print("+");
+
+			} else {
+
+				System.out.print("-");
+			}
+
+		}
+
+		System.out.println("");
 
 	}
 
-} 
-
+}
 
 
 		
