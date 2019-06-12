@@ -125,7 +125,7 @@ public class Tarea2_Ejercicio6 {
                      
                     if ((contador==1)||(contador==ancho)){
                         
-                        System.out.print("*");
+                        System.out.print("+");
                          
                      }else {
                         
